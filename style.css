@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--charcoal-grey);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+
+
+:root {
+    --primary: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Signup Form */
+.signup-form {
+    width: max-content;
+    display: flex;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+    /* display: none; */
+}
+
+.signup-form-wrapper {
+    display: flex;
+}
+
+.signup-form-content-title,
+.success-message-title {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.signup-form-content-mobile-img {
+    display: none;
+}
+
+.signup-list-item {
+    display: flex;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+.signup-list-item p {
+    padding-left: 20px;
+}
+
+.signup-form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px !important;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+input[type=email] {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    padding: 15px;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background: linear-gradient(to right, #FF5374, var(--primary));
+    box-shadow: 5px 5px 18px #FF5374;
+}
+
+/* Success Message */
+.success-message {
+    background-color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* width: 250px; */
+    padding: 50px;
+    display: none;
+}
+
+.success-message-active {
+    display: block;
+}
+
+.success-message img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.success-message p {
+    max-width: 400px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+
+.dismiss-message-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dismiss-message-btn:hover {
+    background: linear-gradient(to right, #FF5374, var(--primary));
+    box-shadow: 5px 5px 18px #FF5374;
+}
+
+span {
+    font-weight: bold;
+}
+
+.attribution {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+.attribution-circle {
+    height: 80px;
+    width: 80px;
+    border: solid 3px #FF5374;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url('https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+}
+
+.attribution-content {
+    position: fixed;
+    left: 100px;
+    bottom: 100px;
+    background-color: rgb(218, 213, 213);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.attribution-content-active {
+    display: block;
+}
+
+.attrinbution-content-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.attrinbution-content-link:last-child {
+    margin-bottom: 0px;
+}
+
+.attrinbution-content-link img {
+    height: 25px;
+    width: 25px;
+}
+
+.attrinbution-content-link p {
+    padding-left: 10px;
+}
+
+.attrinbution-content-link:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+ion-icon {
+    font-size: 23px;
+    color: black;
+}
+
+.error-message {
+    color: var(--primary);
+    font-weight: bold;
+    display: none;
+}
+
+.error-message-active {
+    display: block;
+}
+
+
+
+
+/** Media Queries **/
+@media screen and (max-width: 420px) {
+    .signup-form {
+        flex-direction: column-reverse;
+        width: 100%;
+        position: fixed;
+        top: 10px;
+    }
+
+    .signup-form-content-desktop-img {
+        display: none;
+    }
+
+    .signup-form-content-mobile-img {
+        display: block;
+    }
+
+    .signup-form-content {
+        padding-left: 20px;
+        padding-right: 20px !important;
+    }
+
+    .signup-form-content-title {
+        font-size: 40px;
+    }
+
+    .attribution-circle {
+        height: 60px;
+        width: 60px;
+    }
+
+    .attribution-content {
+        left: 60px;
+        bottom: 80px;
+    }
+}

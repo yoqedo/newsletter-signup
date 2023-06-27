@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Sign-up form start -->
+  <div class="signup-form">
+    <div class="signup-form-wrapper">
+      <div class="signup-form-content">
+        <h1 class="signup-form-content-title">
+          Stay updated!
+        </h1>
+        <p>
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+
+        <div style="margin:20px 0px;">
+          <div class="signup-list-item">
+            <img src="./assets/images/icon-list.svg" alt="icon-list">
+            <p>
+              Product discovery and building what matters
+            </p>
+          </div>
+          <div class="signup-list-item">
+            <img src="./assets/images/icon-list.svg" alt="icon-list">
+            <p>
+              Measuring to ensure updates are a success
+            </p>
+          </div>
+          <div class="signup-list-item">
+            <img src="./assets/images/icon-list.svg" alt="icon-list">
+            <p>
+              And much more!
+            </p>
+          </div>
+
+        </div>
+
+        <form>
+          <div style="display: flex; justify-content: space-between;">
+            <label for="femail">Email Adress</label>
+            <div class="error-message">Valid email required</div>
+          </div>
+          <input type="email" class="femail" placeholder="email@company.com">
+          <input type="submit" id="submit" formnovalidate="formnovalidate" value="Subscribe to monthly Newsletter">
+        </form>
+      </div>
+    </div>
+    <img class='signup-form-content-desktop-img' src="./assets/images/illustration-sign-up-desktop.svg"
+      alt="illustration-signup">
+    <img class='signup-form-content-mobile-img' src="./assets/images/illustration-sign-up-mobile.svg"
+      alt="illustration-signup">
+  </div>
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <div class="success-message">
+    <img src="./assets/images/icon-success.svg" alt="success-icon">
+    <h1 class="success-message-title">
+      Thanks for <br /> subscribing!
+    </h1>
+    <p>
+      A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button class="dismiss-message-btn">
+      Dismiss message
+    </button>
+  </div>
+  <!-- Success message end -->
+
+  <!-- Attribution starts -->
+  <div class="attribution">
+    <div class="attribution-circle"></div>
+    <div class="attribution-content">
+      <div class="attrinbution-content-link">
+        <img src="./assets/images/favicon-32x32.png" />
+        <p>
+          <a href="https://www.frontendmentor.io" target="_blank">Fronted Mentor</a>
+        </p>
+      </div>
+      <div class="attrinbution-content-link">
+        <ion-icon name="home-outline"></ion-icon>
+        <p>
+          <a href="https://yprojects.netlify.app/" target="_blank">My Website</a>
+        </p>
+      </div>
+      <div class="attrinbution-content-link">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <p>
+          <a href="https://www.instagram.com/yoqedo/" target="_blank">Instagram</a>
+        </p>
+      </div>
+      <div class="attrinbution-content-link">
+        <ion-icon name="logo-github"></ion-icon>
+        <p>
+          <a href="https://github.com/yoqedo" target="_blank">Github</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
